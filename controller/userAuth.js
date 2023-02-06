@@ -1,7 +1,7 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
-const { Item } = require("../models/Item");
-const Cart = require("../models/Cart");
+// const { Item } = require("../models/Item");
+// const Cart = require("../models/Cart");
 const app = express();
 const otpService = require("../middleware/otpService.js");
 
