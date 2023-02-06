@@ -3,7 +3,7 @@ const vendorAuthenticate = require("../middleware/vendorProtected");
 const app = express();
 const router = express.Router();
 const { ItemCategory, CatImgUpload } = require("../models/itemCategory");
-const { Item, itemImgUpload } = require("../models/item");
+const { Item, itemImgUpload } = require("../models/Item");
 // const { ContactToVendor } = require("../models/Contact").ContactToVendor;
 const { Vendor, upload } = require("../models/Vendor");
 const {

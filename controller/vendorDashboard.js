@@ -2,7 +2,7 @@ const express = require("express");
 const sharp = require("sharp");
 const fs = require("fs");
 const { ItemCategory, upload } = require("../models/itemCategory");
-const { Item, itemImgUpload } = require("../models/item");
+const { Item, itemImgUpload } = require("../models/Item");
 
 const addcategory = async (req, res, next) => {
   console.log(req.rootVendor._id);
@@ -101,7 +101,6 @@ const deleteitem = async (req, res, next) => {
   }
 };
 
-
 const deletecategory = async (req, res, next) => {
   try {
     const itemOfCat = await Item.findOneAndDelete({
@@ -117,4 +116,11 @@ const deletecategory = async (req, res, next) => {
   }
 };
 
-module.exports = { addcategory, item, outofstock, instock, deleteitem , deletecategory };
+module.exports = {
+  addcategory,
+  item,
+  outofstock,
+  instock,
+  deleteitem,
+  deletecategory,
+};
